@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'jost';
+    font-size: 20px;
+
+}
+.faq{
+    width: 1000px;
+    height: auto;
+    margin: 20px auto;
+}
+.faq .faq-title{
+    background-color: thistle;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+.faq .faq-detail{
+    background-color: steelblue;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    display: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faq</title>
+        <link rel="stylesheet" href="css/faq.css">
+    </head>
+    <body>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel repellat corporis sapiente quod, id provident, debitis ipsam tenetur ipsum facere nam? Voluptatum architecto maiores provident molestiae possimus repudiandae fuga?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel repellat corporis sapiente quod, id provident, debitis ipsam tenetur ipsum facere nam? Voluptatum architecto maiores provident molestiae possimus repudiandae fuga?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel repellat corporis sapiente quod, id provident, debitis ipsam tenetur ipsum facere nam? Voluptatum architecto maiores provident molestiae possimus repudiandae fuga?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel repellat corporis sapiente quod, id provident, debitis ipsam tenetur ipsum facere nam? Voluptatum architecto maiores provident molestiae possimus repudiandae fuga?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel repellat corporis sapiente quod, id provident, debitis ipsam tenetur ipsum facere nam? Voluptatum architecto maiores provident molestiae possimus repudiandae fuga?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel repellat corporis sapiente quod, id provident, debitis ipsam tenetur ipsum facere nam? Voluptatum architecto maiores provident molestiae possimus repudiandae fuga?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel repellat corporis sapiente quod, id provident, debitis ipsam tenetur ipsum facere nam? Voluptatum architecto maiores provident molestiae possimus repudiandae fuga?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel repellat corporis sapiente quod, id provident, debitis ipsam tenetur ipsum facere nam? Voluptatum architecto maiores provident molestiae possimus repudiandae fuga?</li>
+        </ul>
+
+        <div class="faq">
+            <h2 class="faq-title">Click Me to Open Paragraph</h2>
+            <p class="faq-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse eveniet incidunt. Expedita incidunt voluptatem repellendus ea, animi exercitationem debitis earum? Sed laborum culpa tenetur soluta inventore est, eum quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eum facilis reiciendis? Adipisci ducimus blanditiis perspiciatis ipsum, officia facilis soluta obcaecati cum tenetur illum nesciunt nobis voluptates molestias. Illum, doloremque.</p>
+            <h2 class="faq-title">Click Me to Open Paragraph</h2>
+            <p class="faq-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse eveniet incidunt. Expedita incidunt voluptatem repellendus ea, animi exercitationem debitis earum? Sed laborum culpa tenetur soluta inventore est, eum quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eum facilis reiciendis? Adipisci ducimus blanditiis perspiciatis ipsum, officia facilis soluta obcaecati cum tenetur illum nesciunt nobis voluptates molestias. Illum, doloremque.</p>
+            <h2 class="faq-title">Click Me to Open Paragraph</h2>
+            <p class="faq-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse eveniet incidunt. Expedita incidunt voluptatem repellendus ea, animi exercitationem debitis earum? Sed laborum culpa tenetur soluta inventore est, eum quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eum facilis reiciendis? Adipisci ducimus blanditiis perspiciatis ipsum, officia facilis soluta obcaecati cum tenetur illum nesciunt nobis voluptates molestias. Illum, doloremque.</p>
+            <h2 class="faq-title">Click Me to Open Paragraph</h2>
+            <p class="faq-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse eveniet incidunt. Expedita incidunt voluptatem repellendus ea, animi exercitationem debitis earum? Sed laborum culpa tenetur soluta inventore est, eum quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eum facilis reiciendis? Adipisci ducimus blanditiis perspiciatis ipsum, officia facilis soluta obcaecati cum tenetur illum nesciunt nobis voluptates molestias. Illum, doloremque.</p>
+            <h2 class="faq-title">Click Me to Open Paragraph</h2>
+            <p class="faq-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse eveniet incidunt. Expedita incidunt voluptatem repellendus ea, animi exercitationem debitis earum? Sed laborum culpa tenetur soluta inventore est, eum quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eum facilis reiciendis? Adipisci ducimus blanditiis perspiciatis ipsum, officia facilis soluta obcaecati cum tenetur illum nesciunt nobis voluptates molestias. Illum, doloremque.</p>
+        </div>
+
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("ul li:first-child").siblings().css("color","green");
+                $("ul").children().css("font-size","24px");
+
+                $(".faq-title").click(function(){
+                    
+                    // $(".faq").children(".faq-detail").slideUp(500);
+                    // $(this).next(".faq-detail").slideDown(500);
+
+                    // $(this).next().slideToggle(500).siblings(".faq-detail").slideUp(500);
+                })
+            });
+        </script>
+    </body>
+</html>

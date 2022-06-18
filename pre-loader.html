@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/pre-loader.css" type="text/css">
+    </head>
+    <body>
+        <div class="loader">
+            <div class="open-door">
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+            
+            <!-- <div class="circle">
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+                <div class="c1"></div>
+            </div> -->
+        </div>
+        <h1>Loader</h1>
+
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(window).on("load",function(){
+                // $(".loader").delay(2000).fadeOut(3000);
+                // $(".circle").fadeOut(3000);
+                $(".open-door").delay(1800).fadeOut(200);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>  
+        <a href="javascript:void(0)" class="btn">Click Me....to Hide the Box....!!</a>
+        <a href="javascript:void(0)" class="btn2">Click Me....to Show the Box....!!</a>
+        <a href="javascript:void(0)" class="btn3">Click Me....to toggle the Box....!!</a>
+        <div class="box"></div>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et velit fugit necessitatibus, quod vel blanditiis ipsum quis, debitis natus, ullam quaerat molestiae facere neque cum? Fugit exercitationem dolor repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere iure eum eaque ipsa delectus nemo iusto laboriosam magni veniam fuga non nesciunt sequi officiis quod vero blanditiis error illo asperiores, temporibus autem. Nisi optio voluptas labore nesciunt laudantium. Ea optio iusto dolorem eum fuga natus molestiae ab obcaecati aspernatur blanditiis quibusdam possimus atque voluptates commodi autem doloribus, nihil reprehenderit veniam qui distinctio. Ab hic consectetur adipisci fugit quia error mollitia ducimus aliquid ipsum eos rem, commodi nesciunt eaque in sint veritatis sapiente! Dolores hic distinctio adipisci eius quia voluptatibus error reiciendis doloribus quidem blanditiis ratione illo nisi laudantium ut placeat, vel numquam earum beatae iste eum? Fuga officia deserunt similique, voluptas magni laboriosam doloremque autem voluptatum mollitia sit consequuntur natus non eum qui tempore nisi voluptates. Illo quos, voluptatem eum perferendis atque iste quis vitae voluptas beatae fugit in, suscipit deleniti! Animi repellendus similique quidem ex, a quae nesciunt voluptatibus maxime necessitatibus adipisci ratione facere eligendi ut repudiandae commodi quod cupiditate error atque. Officia doloremque autem totam incidunt qui deserunt. Dicta enim natus sit explicabo molestias eum sint harum. Error non corporis aut repellendus esse et velit dolores deserunt praesentium maiores, nisi repellat assumenda, officia rerum quos voluptates similique.</p>
+
+        <input type="text" class="form-input">
+        <button>Get Value</button>
+
+        
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            // jquery code
+            $(document).ready(function(){
+                $(".btn").click(function(){
+                    $(".box").hide();
+                });
+                $(".btn2").click(function(){
+                    $(".box").show();
+                });
+                $(".btn3").click(function(){
+                    $(".box").toggle();
+                });
+                $(".para").mouseenter(function(){
+                    console.log("You are Entering in Paragraph.")
+                });
+                $(".para").mouseleave(function(){
+                    $(this).css("background-color","crimson");
+                });
+                $("body").mousemove(function(){
+                    $(this).css("background-color","lightblue")
+                });
+                $(".btn2").mousedown(function(){
+                    $(this).css("background-color","orange");
+                });
+                $(".btn2").mouseup(function(){
+                    $(this).css("background-color","yellowgreen");
+                });
+                $(".form-input").keypress(function(){
+                    $(this).css("background-color","transparent");
+                });
+                $(".form-input").keyup(function(){
+                    $(this).css("background-color","pink");
+                });
+                $(".form-input").keydown(function(){
+                    $(this).css("background-color","green");
+                });
+                $(".form-input").focus(function(){
+                    $(this).css("color","blue");
+                });
+                $(".form-input").blur(function(){
+                    $(this).css("color","red");
+                });
+
+                $("button").click(function(){
+                    alert("Value is "+$(".form-input").val());
+                })
+            });
+        </script>
+    </body>
+</html>
